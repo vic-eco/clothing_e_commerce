@@ -1,3 +1,9 @@
+-- USERS
+
+INSERT INTO "user" (email, password, first_name, last_name)
+VALUES 
+('john.doe@example.com', 'hashedpassword123', 'John', 'Doe'),
+('mike.doe@example.com', 'password123', 'Mike', 'Doe');
 
 -- CATEGORIES
 
