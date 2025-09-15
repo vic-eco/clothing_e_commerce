@@ -21,8 +21,12 @@ app.use(
 //Authentication setup
 app.use(passport.initialize());
 app.use(passport.session());
+
 const auth = require('./routes/auth');
+const userRouter = require('./routes/user');
+
 app.use('/api/auth', auth);
+app.use('/api/user', userRouter);
 
 const PORT = process.env.PORT || 8000
 app.listen(PORT, ()=>{

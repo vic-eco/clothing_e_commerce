@@ -1,9 +1,11 @@
 -- USERS
 
+-- password 1 = hashedpassword123
+-- password 2 = password123
 INSERT INTO "user" (email, password, first_name, last_name)
 VALUES 
-('john.doe@example.com', 'hashedpassword123', 'John', 'Doe'),
-('mike.doe@example.com', 'password123', 'Mike', 'Doe');
+('john.doe@example.com', '$2b$10$t5t3ORXDrvz.lre3kAwYouJfOf4qUOhYqe4z/6.3t/q17euMUN1A.', 'John', 'Doe'),
+('mike.doe@example.com', '$2b$10$x3Tksln.u.Zue5xjKR1lCe4m1sDTBUpkqiBZR3n7OhW5BCqLoshW6', 'Mike', 'Doe');
 
 -- CATEGORIES
 
